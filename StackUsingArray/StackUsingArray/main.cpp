@@ -15,6 +15,28 @@ struct stack
     int *s;
 };
 
+void push(stack *st,int x)
+{
+    if(st->top==st->size-1)
+        cout<<"Stack Overflow";
+    else
+    {
+        st->top++;
+        st->s[st->top]=x;
+    }
+}
+int pop(stack *st)
+{
+    int x=-1;
+    if(st->top==-1)
+        cout<<"Stack Underflow";
+    else
+    {
+        x=st->s[st->top];
+        st->top--;
+    }
+    return x;
+}
 
 int main()
 {
@@ -22,7 +44,7 @@ int main()
     cout<<"Enter Size of stack:";
     cin>>st.size;
     st.s=new int[st.size];
-    
+    st.top=-1;
     
     return 0;
 }
