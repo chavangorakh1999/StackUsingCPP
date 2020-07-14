@@ -1,2 +1,0 @@
-# StackUsingCpp
- Implementing Stack DSA
