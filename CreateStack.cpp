@@ -6,6 +6,10 @@ using namespace std;
 //     struct Node*next;
 // }
 
+void display()
+{
+
+}
 int main()
 {
     cout<<"hello";
