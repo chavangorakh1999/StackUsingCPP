@@ -16,6 +16,8 @@ int main()
     cin>>s.size;
     s.st=new int [s.size];
     s.top=-1;
+
     return 0;
+    
 }
 
